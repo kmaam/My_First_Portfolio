@@ -1,4 +1,3 @@
-let first= "C is fun";
-let second= "Python is cool";
-let third= "JavaScript is amazing";
-console.log(first,second,third)
+console.log("C is fun");
+console.log("Python is cool");
+console.log("JavaScript is amazing");
