@@ -1,0 +1,38 @@
+/* Make <body> a flex container, stacked vertically */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* take full screen height */
+  margin: 0;
+}
+
+/* Make <main> a flex container, side-by-side layout */
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; /* main expands to fill available space */
+}
+
+/* Let article take 2 parts of the width */
+article {
+  flex: 2;
+  overflow-y: auto; /* scroll if content overflows */
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+/* Let aside take 1 part of the width */
+aside {
+  flex: 1;
+  overflow-y: auto; /* scroll if content overflows */
+  padding: 1rem;
+  background-color: #eee;
+}
+
+/* Optional: Style header and footer */
+header, footer {
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
